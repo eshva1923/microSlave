@@ -18,6 +18,7 @@
 		D077DEE719064A7D00DE6789 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D077DEC619064A7D00DE6789 /* Cocoa.framework */; };
 		D077DEEF19064A7D00DE6789 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D077DEED19064A7D00DE6789 /* InfoPlist.strings */; };
 		D077DEF119064A7D00DE6789 /* microSlaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D077DEF019064A7D00DE6789 /* microSlaveTests.m */; };
+		D0A6EB30190658EA0095F056 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A6EB2F190658EA0095F056 /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		D077DEEC19064A7D00DE6789 /* microSlaveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "microSlaveTests-Info.plist"; sourceTree = "<group>"; };
 		D077DEEE19064A7D00DE6789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D077DEF019064A7D00DE6789 /* microSlaveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = microSlaveTests.m; sourceTree = "<group>"; };
+		D0A6EB2E190658EA0095F056 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		D0A6EB2F190658EA0095F056 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				D077DEDB19064A7D00DE6789 /* MainMenu.xib */,
 				D077DEDE19064A7D00DE6789 /* Images.xcassets */,
 				D077DECD19064A7D00DE6789 /* Supporting Files */,
+				D0A6EB2E190658EA0095F056 /* AppController.h */,
+				D0A6EB2F190658EA0095F056 /* AppController.m */,
 			);
 			path = microSlave;
 			sourceTree = "<group>";
@@ -201,6 +206,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Eshva;
 				TargetAttributes = {
+					D077DEC219064A7D00DE6789 = {
+						DevelopmentTeam = 2QT32B3PR4;
+					};
 					D077DEE319064A7D00DE6789 = {
 						TestTargetID = D077DEC219064A7D00DE6789;
 					};
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D077DEDA19064A7D00DE6789 /* AppDelegate.m in Sources */,
+				D0A6EB30190658EA0095F056 /* AppController.m in Sources */,
 				D077DED319064A7D00DE6789 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "microSlave/microSlave-Prefix.pch";
@@ -398,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "microSlave/microSlave-Prefix.pch";
@@ -466,6 +477,7 @@
 				D077DEF619064A7D00DE6789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D077DEF719064A7D00DE6789 /* Build configuration list for PBXNativeTarget "microSlaveTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +486,7 @@
 				D077DEF919064A7D00DE6789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
