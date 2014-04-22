@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D077DEC719064A7D00DE6789 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D077DEC619064A7D00DE6789 /* Cocoa.framework */; };
+		D077DED119064A7D00DE6789 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D077DECF19064A7D00DE6789 /* InfoPlist.strings */; };
+		D077DED319064A7D00DE6789 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D077DED219064A7D00DE6789 /* main.m */; };
+		D077DED719064A7D00DE6789 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D077DED519064A7D00DE6789 /* Credits.rtf */; };
+		D077DEDA19064A7D00DE6789 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D077DED919064A7D00DE6789 /* AppDelegate.m */; };
+		D077DEDD19064A7D00DE6789 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D077DEDB19064A7D00DE6789 /* MainMenu.xib */; };
+		D077DEDF19064A7D00DE6789 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D077DEDE19064A7D00DE6789 /* Images.xcassets */; };
+		D077DEE619064A7D00DE6789 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D077DEE519064A7D00DE6789 /* XCTest.framework */; };
+		D077DEE719064A7D00DE6789 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D077DEC619064A7D00DE6789 /* Cocoa.framework */; };
+		D077DEEF19064A7D00DE6789 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D077DEED19064A7D00DE6789 /* InfoPlist.strings */; };
+		D077DEF119064A7D00DE6789 /* microSlaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D077DEF019064A7D00DE6789 /* microSlaveTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D077DEE819064A7D00DE6789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D077DEBB19064A7C00DE6789 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D077DEC219064A7D00DE6789;
+			remoteInfo = microSlave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D077DEC319064A7D00DE6789 /* microSlave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microSlave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D077DEC619064A7D00DE6789 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D077DEC919064A7D00DE6789 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D077DECA19064A7D00DE6789 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D077DECB19064A7D00DE6789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D077DECE19064A7D00DE6789 /* microSlave-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "microSlave-Info.plist"; sourceTree = "<group>"; };
+		D077DED019064A7D00DE6789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D077DED219064A7D00DE6789 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D077DED419064A7D00DE6789 /* microSlave-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "microSlave-Prefix.pch"; sourceTree = "<group>"; };
+		D077DED619064A7D00DE6789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D077DED819064A7D00DE6789 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D077DED919064A7D00DE6789 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D077DEDC19064A7D00DE6789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D077DEDE19064A7D00DE6789 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D077DEE419064A7D00DE6789 /* microSlaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = microSlaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D077DEE519064A7D00DE6789 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D077DEEC19064A7D00DE6789 /* microSlaveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "microSlaveTests-Info.plist"; sourceTree = "<group>"; };
+		D077DEEE19064A7D00DE6789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D077DEF019064A7D00DE6789 /* microSlaveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = microSlaveTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D077DEC019064A7D00DE6789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077DEC719064A7D00DE6789 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D077DEE119064A7D00DE6789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077DEE719064A7D00DE6789 /* Cocoa.framework in Frameworks */,
+				D077DEE619064A7D00DE6789 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D077DEBA19064A7C00DE6789 = {
+			isa = PBXGroup;
+			children = (
+				D077DECC19064A7D00DE6789 /* microSlave */,
+				D077DEEA19064A7D00DE6789 /* microSlaveTests */,
+				D077DEC519064A7D00DE6789 /* Frameworks */,
+				D077DEC419064A7D00DE6789 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D077DEC419064A7D00DE6789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D077DEC319064A7D00DE6789 /* microSlave.app */,
+				D077DEE419064A7D00DE6789 /* microSlaveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D077DEC519064A7D00DE6789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D077DEC619064A7D00DE6789 /* Cocoa.framework */,
+				D077DEE519064A7D00DE6789 /* XCTest.framework */,
+				D077DEC819064A7D00DE6789 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D077DEC819064A7D00DE6789 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D077DEC919064A7D00DE6789 /* AppKit.framework */,
+				D077DECA19064A7D00DE6789 /* CoreData.framework */,
+				D077DECB19064A7D00DE6789 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D077DECC19064A7D00DE6789 /* microSlave */ = {
+			isa = PBXGroup;
+			children = (
+				D077DED819064A7D00DE6789 /* AppDelegate.h */,
+				D077DED919064A7D00DE6789 /* AppDelegate.m */,
+				D077DEDB19064A7D00DE6789 /* MainMenu.xib */,
+				D077DEDE19064A7D00DE6789 /* Images.xcassets */,
+				D077DECD19064A7D00DE6789 /* Supporting Files */,
+			);
+			path = microSlave;
+			sourceTree = "<group>";
+		};
+		D077DECD19064A7D00DE6789 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D077DECE19064A7D00DE6789 /* microSlave-Info.plist */,
+				D077DECF19064A7D00DE6789 /* InfoPlist.strings */,
+				D077DED219064A7D00DE6789 /* main.m */,
+				D077DED419064A7D00DE6789 /* microSlave-Prefix.pch */,
+				D077DED519064A7D00DE6789 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D077DEEA19064A7D00DE6789 /* microSlaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				D077DEF019064A7D00DE6789 /* microSlaveTests.m */,
+				D077DEEB19064A7D00DE6789 /* Supporting Files */,
+			);
+			path = microSlaveTests;
+			sourceTree = "<group>";
+		};
+		D077DEEB19064A7D00DE6789 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D077DEEC19064A7D00DE6789 /* microSlaveTests-Info.plist */,
+				D077DEED19064A7D00DE6789 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D077DEC219064A7D00DE6789 /* microSlave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D077DEF419064A7D00DE6789 /* Build configuration list for PBXNativeTarget "microSlave" */;
+			buildPhases = (
+				D077DEBF19064A7D00DE6789 /* Sources */,
+				D077DEC019064A7D00DE6789 /* Frameworks */,
+				D077DEC119064A7D00DE6789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = microSlave;
+			productName = microSlave;
+			productReference = D077DEC319064A7D00DE6789 /* microSlave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D077DEE319064A7D00DE6789 /* microSlaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D077DEF719064A7D00DE6789 /* Build configuration list for PBXNativeTarget "microSlaveTests" */;
+			buildPhases = (
+				D077DEE019064A7D00DE6789 /* Sources */,
+				D077DEE119064A7D00DE6789 /* Frameworks */,
+				D077DEE219064A7D00DE6789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D077DEE919064A7D00DE6789 /* PBXTargetDependency */,
+			);
+			name = microSlaveTests;
+			productName = microSlaveTests;
+			productReference = D077DEE419064A7D00DE6789 /* microSlaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D077DEBB19064A7C00DE6789 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Eshva;
+				TargetAttributes = {
+					D077DEE319064A7D00DE6789 = {
+						TestTargetID = D077DEC219064A7D00DE6789;
+					};
+				};
+			};
+			buildConfigurationList = D077DEBE19064A7C00DE6789 /* Build configuration list for PBXProject "microSlave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D077DEBA19064A7C00DE6789;
+			productRefGroup = D077DEC419064A7D00DE6789 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D077DEC219064A7D00DE6789 /* microSlave */,
+				D077DEE319064A7D00DE6789 /* microSlaveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D077DEC119064A7D00DE6789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077DED119064A7D00DE6789 /* InfoPlist.strings in Resources */,
+				D077DEDF19064A7D00DE6789 /* Images.xcassets in Resources */,
+				D077DED719064A7D00DE6789 /* Credits.rtf in Resources */,
+				D077DEDD19064A7D00DE6789 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D077DEE219064A7D00DE6789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077DEEF19064A7D00DE6789 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D077DEBF19064A7D00DE6789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077DEDA19064A7D00DE6789 /* AppDelegate.m in Sources */,
+				D077DED319064A7D00DE6789 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D077DEE019064A7D00DE6789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077DEF119064A7D00DE6789 /* microSlaveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D077DEE919064A7D00DE6789 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D077DEC219064A7D00DE6789 /* microSlave */;
+			targetProxy = D077DEE819064A7D00DE6789 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D077DECF19064A7D00DE6789 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D077DED019064A7D00DE6789 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D077DED519064A7D00DE6789 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D077DED619064A7D00DE6789 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D077DEDB19064A7D00DE6789 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D077DEDC19064A7D00DE6789 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D077DEED19064A7D00DE6789 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D077DEEE19064A7D00DE6789 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D077DEF219064A7D00DE6789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D077DEF319064A7D00DE6789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D077DEF519064A7D00DE6789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "microSlave/microSlave-Prefix.pch";
+				INFOPLIST_FILE = "microSlave/microSlave-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D077DEF619064A7D00DE6789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "microSlave/microSlave-Prefix.pch";
+				INFOPLIST_FILE = "microSlave/microSlave-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D077DEF819064A7D00DE6789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/microSlave.app/Contents/MacOS/microSlave";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "microSlave/microSlave-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "microSlaveTests/microSlaveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D077DEF919064A7D00DE6789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/microSlave.app/Contents/MacOS/microSlave";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "microSlave/microSlave-Prefix.pch";
+				INFOPLIST_FILE = "microSlaveTests/microSlaveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D077DEBE19064A7C00DE6789 /* Build configuration list for PBXProject "microSlave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D077DEF219064A7D00DE6789 /* Debug */,
+				D077DEF319064A7D00DE6789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D077DEF419064A7D00DE6789 /* Build configuration list for PBXNativeTarget "microSlave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D077DEF519064A7D00DE6789 /* Debug */,
+				D077DEF619064A7D00DE6789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D077DEF719064A7D00DE6789 /* Build configuration list for PBXNativeTarget "microSlaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D077DEF819064A7D00DE6789 /* Debug */,
+				D077DEF919064A7D00DE6789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D077DEBB19064A7C00DE6789 /* Project object */;
+}
