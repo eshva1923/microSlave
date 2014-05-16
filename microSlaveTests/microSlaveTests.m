@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AppController.h"
 
 @interface microSlaveTests : XCTestCase
 
@@ -26,9 +27,19 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testFilesAreShown
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTAssertNotNil((id)[AppController areHiddenFilesShown]);
+    NSString*result=[NSString stringWithFormat:@"%hhd",[AppController areHiddenFilesShown]];
+    XCTAssertNotNil(result);
 }
-
+-(void)testSetFilesHidden
+{
+    XCTAssertFalse([AppController setHiddenFilesShown:NO]);
+}
+-(void)testSetFilesShown
+{
+    XCTAssertTrue([AppController setHiddenFilesShown:YES]);
+}
 @end

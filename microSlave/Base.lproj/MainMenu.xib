@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
@@ -23,16 +23,47 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Utils" id="dn6-ay-4e6">
                         <items>
-                            <menuItem title="Show/hide hidden files" state="on" alternate="YES" keyEquivalent="H" id="P5X-A9-w2r"/>
+                            <menuItem title="Show / Hide hidden files" enabled="NO" id="NLc-dr-JRf">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Hidden files: hidden" alternate="YES" keyEquivalent="H" id="P5X-A9-w2r">
+                                <connections>
+                                    <action selector="switchHiddenFileStatus:" target="GQy-bt-l0r" id="6KV-Os-e4p"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="m4m-sd-o6O"/>
+                <menuItem title="Network" id="C1X-DU-Pfr">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Network" id="ySb-YZ-uGk">
+                        <items>
+                            <menuItem title="Eth" enabled="NO" id="9gb-cE-xOf">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Not Connected" enabled="NO" id="biD-ZW-mIS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="sGI-Gi-Qh3"/>
+                            <menuItem title="Wi-Fi" enabled="NO" id="9Tb-Gx-CqN">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Not Connected" enabled="NO" id="4EW-Dk-9yu">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="k1O-pq-E6o"/>
                 <menuItem title="mySQL" id="Vr8-Rg-aJJ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="mySQL" id="kOs-mc-hrW">
                         <items>
-                            <menuItem title="Item" id="0zS-vh-mWj">
+                            <menuItem title="Daemon" enabled="NO" id="0zS-vh-mWj">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Status: Start" id="BJv-hx-i55">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                         </items>
@@ -81,6 +112,7 @@
         </menu>
         <customObject id="GQy-bt-l0r" customClass="AppController">
             <connections>
+                <outlet property="hiddenFileStatus" destination="P5X-A9-w2r" id="ldh-Fi-NnU"/>
                 <outlet property="menu" destination="vau-Rx-aaL" id="WEM-8f-Lj7"/>
             </connections>
         </customObject>

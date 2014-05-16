@@ -12,5 +12,12 @@
 @property(nonatomic,strong)NSStatusItem*statusItem;
 @property(nonatomic,strong)IBOutlet NSMenu*menu;
 
+@property(nonatomic,strong)IBOutlet NSMenuItem*hiddenFileStatus;
+
+-(IBAction)switchHiddenFileStatus:(id)sender;
 -(IBAction)terminate:(id)sender;
+
+
++(BOOL)areHiddenFilesShown;
++(BOOL)setHiddenFilesShown:(BOOL)nv;
 @end
