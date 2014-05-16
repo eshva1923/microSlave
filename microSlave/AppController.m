@@ -36,37 +36,26 @@
 
 -(void)updateHiddenFilesStatus{
     NSString*hiddenfilestatusString;
-    if([AppController areHiddenFilesShown]){
-        hiddenfilestatusString = @"shown";
-    }else{
-        hiddenfilestatusString = @"hidden";
-    };
+    if([AppController areHiddenFilesShown]){hiddenfilestatusString = @"shown";}
+    else{hiddenfilestatusString = @"hidden";};
     [_hiddenFileStatus setTitle:[NSString stringWithFormat:@"Hidden files are %@",hiddenfilestatusString]];
 }
 
+#pragma mark - low-level functionalities
+#pragma mark hidden files functions
 +(BOOL)areHiddenFilesShown{
     NSString*result = [AppController runCommand:@"defaults read com.apple.finder AppleShowAllFiles -boolean"];
-    NSLog(@"RESULT->%@<-",result);
-    
-    if([[result substringToIndex:1]isEqualToString:@"1"] ){
-        return YES;
-    }
+    if([[result substringToIndex:1]isEqualToString:@"1"] ){return YES;}
     return NO;
 }
 
 +(BOOL)setHiddenFilesShown:(BOOL)nv{
-    if(nv){
-        [AppController runCommand:@"defaults write com.apple.finder AppleShowAllFiles -boolean true"];
-        
-    }else{
-        //[AppController runCommand:@"defaults delete com.apple.finder AppleShowAllFiles"];
-        [AppController runCommand:@"defaults write com.apple.finder AppleShowAllFiles -boolean false"];
-    }
+    if(nv){[AppController runCommand:@"defaults write com.apple.finder AppleShowAllFiles -boolean true"];
+    }else{[AppController runCommand:@"defaults write com.apple.finder AppleShowAllFiles -boolean false"];}
     [AppController runCommand:@"killall Finder"];
     return [AppController areHiddenFilesShown];
 }
-
-#pragma mark - low-level functionalities
+#pragma mark shell command execution
 +(NSString*)runCommand:(NSString *)commandToRun
 {
     NSTask *task;
@@ -77,7 +66,7 @@
                           @"-c" ,
                           [NSString stringWithFormat:@"%@", commandToRun],
                           nil];
-    NSLog(@"run command: %@",commandToRun);
+    //NSLog(@"run command: %@",commandToRun);
     [task setArguments: arguments];
     
     NSPipe *pipe;

@@ -15,7 +15,7 @@
     // Insert code here to initialize your application
     //self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     //[self.statusItem setHighli]
-     
+    [[NSApplication sharedApplication] setActivationPolicy:NSApplicationActivationPolicyAccessory];
 }
 
 @end
